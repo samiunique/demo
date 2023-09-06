@@ -1,4 +1,4 @@
-run = "cowsay Configure me!"
+run = "gcc -o program main.c && ./program"
 
 [nix]
 channel = "stable-22_11"

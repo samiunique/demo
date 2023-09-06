@@ -1,4 +1,4 @@
-run = "gcc -o program main.c && ./program"
+run = "gcc -o program chidi.c && ./program"
 
 [nix]
 channel = "stable-22_11"

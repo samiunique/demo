@@ -1,10 +1,22 @@
 #include <stdio.h>
 
-int main(const char *rexfile)
+int main(int argc, char *argv[])
 {
-char c;
+    if (argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
+        return (1);
+    }
 
- c = fopen(rexfile, "r");
-fprintf(rexfile, "%s\n", "Hello world");
-  return (0);
+    const char *rexfile = argv[1];
+    FILE *file = fopen(rexfile, "w");
+
+    if (file == NULL) {
+        perror("Error opening file");
+        return (1);
+    }
+
+    fprintf(file, "%s\n", "Hello, world it's me");
+    fclose(file);
+
+    return (0);
 }

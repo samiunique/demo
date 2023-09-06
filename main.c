@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define BUFFSIZE 1024
+#define BUFFSIZE 600
 
 int main()
 {

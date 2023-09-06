@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         return (1);
     }
 
-    fprintf(file, "%s\n", "Hello, world it's me");
+    fprintf(file, "%s\n", "Hello, world it's me hi chid its working right?");
     fclose(file);
 
     return (0);
